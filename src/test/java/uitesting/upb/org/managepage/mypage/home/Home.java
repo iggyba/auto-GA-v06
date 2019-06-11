@@ -1,4 +1,5 @@
-package uitesting.upb.org.managepage.google.home;
+package uitesting.upb.org.managepage.mypage.home;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -15,18 +16,18 @@ public class Home extends BasePage {
     private WebElement searchTextField;
 
     @FindBy(id = "Transferir")
-    private WebElement searchButton;
+    private WebElement transferButton;
 
     public Home searchText(String text){
         Events.fillField(searchTextField, text);
         return this;
     }
 
-    public void clickSearchButton(){
-        Events.click(searchButton);
+    public void clicktransferButton(){
+        Events.click(transferButton);
     }
 
-    public void searchTextAndClickSearchButton(String text){
-        searchText(text).clickSearchButton();
-    }
+//    public void searchTextAndClickSearchButton(String text){
+//        searchText(text).clickSearchButton();
+//    }
 }
